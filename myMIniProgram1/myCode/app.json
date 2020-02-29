@@ -1,5 +1,14 @@
 {
   "pages": [
     "pages/index/index"
-  ]
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#eeeeee",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "jacyn",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false
+  },
+  "sitemapLocation": "sitemap.json"
 }

@@ -1,2 +1,8 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view class="container">
+  <image src="{{img}}"></image>
+  <text>{{name}}</text>
+  <button open-type="getUserInfo" bindgetuserinfo="getMyInfo">获取用户信息</button>
+  <!-- open-type="getUserInfo" 授权获取用户信息，并弹出框-->
+  <!-- bindgetuserinfo 用户点击该按钮时，会返回获取到的用户信息，并传给getMyInfo函数，回调的detail数据与wx.getUserInfo返回的一致，open-type="getUserInfo"时有效 -->
+</view>
