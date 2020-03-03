@@ -17,7 +17,8 @@ Iphon6 1rpx = 0.5px
 1.flex-direction
 display:flex;
 fix-direction:row/column/column-reverse
-2.justify-content:flex-start/center/flex-end/space-around/space-between(主轴两侧无间隙，项目之间有间隙)
+2.justify-content:对齐方式
+flex-start/center/flex-end/space-around/space-between(主轴两侧无间隙，项目之间有间隙)
 3.align-items:
 strech:未设置项目尺寸时将项目拉伸至填满交叉轴
 fkex-start：项目顶部与交叉轴起点对齐
