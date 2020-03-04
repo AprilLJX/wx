@@ -1,0 +1,32 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <!-- 城市选择器 -->
+  <picker mode='region' bindchange="chooseCity"> {{city}} </picker>
+  <!-- 文本区域：天气主体显示 -->
+  <text> {{now.tmp}}℃ {{now.cond_txt}}</text>
+  <!-- 图片显示 -->
+  <image src="/images/{{now.cond_code}}.png"></image>
+  <!-- 多行信息展示天气其他显示 -->
+  <view class='detail'>
+    <view class="box">
+      <view class="item">湿度</view>
+      <view class="item">气压</view>
+      <view class="item">能见度</view>
+    </view>
+    <view class="box">
+      <view class="item">{{now.hum}}%</view>
+      <view class="item">{{now.pres}}hpa</view>
+      <view class="item">{{now.vis}}km</view>
+    </view>
+    <view class="box">
+      <view class="item">风向</view>
+      <view class="item">风速</view>
+      <view class="item">风力</view>
+    </view>
+    <view class="box">
+      <view class="item">{{now.wind_dir}}</view>
+      <view class="item">{{now.wind_spd}}Km/h</view>
+      <view class="item">{{now.wind_sc}}级</view>
+    </view>
+  </view>
+</view>

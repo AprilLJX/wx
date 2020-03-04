@@ -5,9 +5,16 @@
   "window": {
     "navigationBarBackgroundColor": "#eeeeee",
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "今日天气",
+    "navigationBarTitleText": "我的天气",
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": false
+  },
+  "permission":{
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
   }
+
+
 }
