@@ -61,13 +61,14 @@ Page({
         that.setData({
           city: [res.data.result.addressComponent.province, res.data.result.addressComponent.city, res.data.result.addressComponent.district]
         })
+        that.getWeather()
+
       },
     })
   },
 
   onLoad:function(option){
-    this.getUserLoc(),
-    this.getWeather()
+    this.getUserLoc()
   },
   /**
    * 组件的方法列表
